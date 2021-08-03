@@ -16,3 +16,13 @@ def swap(x,y):
 #호출
 result = swap(3,4)
 print(result)
+
+#디버깅 연습
+def intersect(prelist,postlist):
+    result =[]
+    for x in prelist:
+        if x in postlist and x not in result:
+            result.append(x)
+    return result
+#호출
+print(intersect("HAM","SPAM"))
